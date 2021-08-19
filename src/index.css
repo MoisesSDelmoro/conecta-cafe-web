@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --cor-primaria: #1E0D00;
+  --cor-secundaria-fonte: #815345;
+  --cor-secundaria: #CBA38A;
+  --cor-enfase-fundo: #e7e7e7;
+  --cor-bg-light: hsl(0, 0%, 97%);
+  
+  
+  --red            : #910d2e;
+  --orange         : #b67442;
+  --yellow         : #f2bc02;
+  --olive          : #8aa23a;
+  --green          : #369656;
+  --teal           : #328a84;
+  --blue           : #212b38;
+  --violet         : #e5ecec;
+  --purple         : #893594;
+  --pink           : #ae3e85;
+  --brown          : #936a4e;
+  --grey           : #ad3f3f;
+  --black          : #1b1c1d;
+
+  --primaryColor   : var(--blue);
+  --secondaryColor : var(--yellow);
+}
