@@ -1,40 +1,47 @@
-// import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// import AppBar from '@material-ui/core/AppBar';
-// import Toolbar from '@material-ui/core/Toolbar';
-// import Typography from '@material-ui/core/Typography';
-// import Button from '@material-ui/core/Button';
-// import IconButton from '@material-ui/core/IconButton';
-// import MenuIcon from '@material-ui/icons/Menu';
+import React from 'react'
+import { Image, Header, Label } from 'semantic-ui-react'
+import logoImage from '../assets/logo2w.png'
+import './appBar.css'
 
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     flexGrow: 1,
-//   },
-//   menuButton: {
-//     marginRight: theme.spacing(2),
-//   },
-//   title: {
-//     flexGrow: 1,
-//   },
-// }));
+const SimpleMenu = props => {
+    // state = {}
 
-// export default function ButtonAppBar() {
-//   const classes = useStyles();
+    // handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
-//   return (
-//     <div className={classes.root}>
-//       <AppBar position="static">
-//         <Toolbar>
-//           <IconButton edge="start" className={classes.menuButton} color='' aria-label="menu">
-//             <MenuIcon />
-//           </IconButton>
-//           <Typography variant="h6" className={classes.title}>
-//             News
-//           </Typography>
-//           <Button color=''>Login</Button>
-//         </Toolbar>
-//       </AppBar>
-//     </div>
-//   );
-// }
+
+    // const { activeItem } = this.state
+
+    return (
+        // <Menu>
+        <>
+            <Header
+                className='appBar'>
+                <Image
+                    src={logoImage}
+                    size='massive'
+                />
+                <Header
+                    className='appBar__fields'>
+                    <Label as='a'>
+                        Home
+                    </Label>
+                    <Label as='a'>
+                        Outras Fazendas
+                    </Label>
+                    <Label as='a'>
+                        |
+                    </Label>
+                    <Label as='a'>
+                        Fazenda
+                    </Label>
+                    <Label as='a'>
+                        Café
+                    </Label>
+                </Header>
+            </Header>
+
+        </>
+    )
+}
+
+export default SimpleMenu
