@@ -1,5 +1,4 @@
 .appBar {
-    padding-left: 5vw;
     height: 7vh;
     width: 100vw;
     display: flex;
@@ -13,8 +12,8 @@
 }
 
 .appBar__fields {
-    padding-left: 50vw;
-    width: 20vw;
+    padding-left: 52vw;
+    width: 21vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -22,3 +21,9 @@
     font-size: calc(5px + 1vmin);
     /* background-color: #241F21; */
 }
+
+.black_button {
+    background-color: #000000;
+    color: #fff;
+    border-radius: 20%;
+  }
