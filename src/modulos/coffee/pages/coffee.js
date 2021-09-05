@@ -1,8 +1,14 @@
-import { Segment, Label, Input } from "semantic-ui-react"
+import { Segment, Label, Input, Button } from "semantic-ui-react"
 import './coffee.css'
+import { coffee } from "../stores/coffee";
 
 const PageCoffee = () => {
     const special = 0;
+
+    const handleSave = () => {
+        coffee.save();
+      };
+
     return (
         <>
             <Segment className='page_coffee'>
@@ -13,7 +19,7 @@ const PageCoffee = () => {
                 <Input placeholder='altitude' />
                 <Input placeholder='colheita' />
                 <Input placeholder='valor na colheita' />
-
+                <Button onClick={handleSave}>ENVIAR</Button>
                 {
                     special ?
                         <>
