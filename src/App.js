@@ -1,14 +1,17 @@
-import './App.css';
+import Header from './components/header';
+// import Footer from './components/footer';
 import './components/appBar.js'
-import SimpleMenu from './components/appBar.js';
-// import PageCoffee from './modulos/coffee/pages/coffee';
+import './App.css';
 import PageFarm from './modulos/farm/farm';
 
 function App() {
   return (
     <>
-      <SimpleMenu />
+      <Header />
+
       <PageFarm />
+
+      {/* <Footer /> */}
     </>
   );
 }
