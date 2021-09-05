@@ -17,3 +17,13 @@
     margin-top:2%;
     color: rgb(66, 124, 81);
 }
+
+.input_form{
+    padding-left: 52vw;
+    width: 21vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    font-size: calc(5px + 1vmin);
+}
