@@ -1,16 +1,9 @@
 import React from 'react'
-import { Image, Header, Label } from 'semantic-ui-react'
+import { Image, Header, Label, Button } from 'semantic-ui-react'
 import logoImage from '../assets/logo2w.png'
 import './appBar.css'
 
 const SimpleMenu = props => {
-    // state = {}
-
-    // handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
-
-    // const { activeItem } = this.state
-
     return (
         // <Menu>
         <>
@@ -37,9 +30,10 @@ const SimpleMenu = props => {
                     <Label as='a'>
                         Café
                     </Label>
+                    <Button className='black_button'>Sair</Button>
+
                 </Header>
             </Header>
-
         </>
     )
 }

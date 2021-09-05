@@ -1,17 +1,17 @@
-import './App.css';
+import Header from './components/header';
+// import Footer from './components/footer';
 import './components/appBar.js'
-import SimpleMenu from './components/appBar.js';
-// import ButtonAppBar from './components/appBar.js';
+import './App.css';
+import PageFarm from './modulos/farm/farm';
 
 function App() {
   return (
     <>
-    <SimpleMenu/>
-      <div className="App">
-        <header className="App-header">
-          <h1>Hello Word!</h1>
-        </header>
-      </div>
+      <Header />
+
+      <PageFarm />
+
+      {/* <Footer /> */}
     </>
   );
 }
