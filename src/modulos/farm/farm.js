@@ -19,19 +19,19 @@ const PageFarm = () => {
         <>
             <Segment className='page_farm'>
                 <Form>
-                <Label className='title_farm'>
-                    Fazenda
-                </Label>
-                    <Form.Field className='form'
+                    <Label className='title_farm'>
+                        Fazenda
+                    </Label>
+                    {/* <Form.Field className='form'
                         id='variedadef'
                         label='variedade'
                         placeholder='variedadef'
-                    />
+                    /> */}
                     <Input placeholder='variedade' className='input_form' id='variedade' />
                     <Input placeholder='altitude' className='input_form'/>
                     <Input placeholder='colheita' className='input_form'/>
 
-                    <Input placeholder='valor na colheita' />
+                    <Input placeholder='valor na colheita' className='input_form' />
                     Nome da fazenda: {user?.data.farm_name}
                     <Button >ENVIAR</Button>
                 </Form>

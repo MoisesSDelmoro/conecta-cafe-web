@@ -1,29 +1,22 @@
 .page_farm {
+    display: flex;
     margin-top:2%;
     margin-left: 10%;
-    border-radius: 2ch;
     height: 80vh;
     width: 80vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+    border-radius: 2ch;
     color: rgb(255, 255, 255);
-    background-color: #f1e6de;
-    /* background-color: #241F21; */
+    background-color: #FFFFFF;
+    font-size: calc(10px + 2vmin);
+    align-items: flex-start
 }
 
 .title_farm{
-    margin-top:2%;
+    align-self: center;
+    margin-top: 1vh;
     color: rgb(66, 124, 81);
 }
 
 .input_form{
-    padding-left: 52vw;
-    width: 21vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: rgb(255, 255, 255);
-    font-size: calc(5px + 1vmin);
+    
 }

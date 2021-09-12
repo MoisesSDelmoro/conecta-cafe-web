@@ -28,4 +28,12 @@ export const AreaHeader = styled.div`
             margin-left: 20px;
         }
     }
+
+    .logout{
+        border-style: solid;
+        border-color: #ffffff;
+        border-radius: 10%;
+        border-width: 2px;
+        padding: 0px 1vh;
+    }
 `;

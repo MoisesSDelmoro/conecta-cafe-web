@@ -14,8 +14,11 @@ function Header() {
                     <nav>
                         <ul>
                             <li>Home</li>
-                            <li>Fazendas</li>
-                            <li>Sair</li>
+                            <li>Outras Fazendas</li>
+                            <li>|</li>
+                            <li>Fazenda</li>
+                            <li>Café</li>
+                            <li className='logout'>Sair</li>
                             
                         </ul>
                     </nav>

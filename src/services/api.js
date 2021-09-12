@@ -6,7 +6,7 @@ const api = axios.create({
 
 api.interceptors.request.use(async config => {
   // Declaramos um token manualmente para teste.
-  const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiZThiZDgwLWQ5M2MtNDNhMC1iMDk2LTg5MDZhNjY1ZmYxMyIsImlhdCI6MTYzMDg2MTIzOCwiZXhwIjoxNjMxMDM0MDM4fQ.2_gYZeYqvFMGGiY9oRCa4Np1sUdXbK7sXsPvrL-_NfI";
+  const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiZThiZDgwLWQ5M2MtNDNhMC1iMDk2LTg5MDZhNjY1ZmYxMyIsImlhdCI6MTYzMTM2MzQyOSwiZXhwIjoxNjMxNTM2MjI5fQ.UiyrsBCIvHmlKBB1vt7yE7DqCxrDfWS6ufP3wXNM8Wc";
 
   if (token) {
     api.defaults.headers.authorization = `Bearer ${token}`;
