@@ -1,9 +1,10 @@
 import { Form, Segment, Label, Input, Button } from "semantic-ui-react"
 import React, { useEffect, useState } from "react";
-import './farm.css'
 import api from "../../services/api";
+import { Template, FarmButton } from './styled';
 
-const PageFarm = () => {
+
+function PageFarm() {
     const [user, setUser] = useState();
 
     useEffect(() => {
@@ -17,27 +18,41 @@ const PageFarm = () => {
 
     return (
         <>
-            <Segment className='page_farm'>
-                <Form>
-                    <Label className='title_farm'>
-                        Fazenda
-                    </Label>
-                    {/* <Form.Field className='form'
-                        id='variedadef'
-                        label='variedade'
-                        placeholder='variedadef'
-                    /> */}
-                    <Input placeholder='variedade' className='input_form' id='variedade' />
-                    <Input placeholder='altitude' className='input_form'/>
-                    <Input placeholder='colheita' className='input_form'/>
+            <Template>
+                <Segment className='page_farm'>
+                    <Form>
+                        <Label className='title_farm'>
+                            Fazenda
+                        </Label>
+                        <FarmButton>
+                            <Button className='option_button'>
+                                História
+                            </Button>
+                            <Button className='option_button'>
+                                Fotos/Vídeos
+                            </Button>
+                            <Button className='option_button'>
+                                QR Code
+                            </Button>
+                            <Button className='option_button'>
+                                Localização
+                            </Button>
+                            <Button className='option_button'>
+                                Contato
+                            </Button>
+                        </FarmButton>
+                        <Input placeholder='variedade' className='input_form' id='variedade' />
+                        <Input placeholder='altitude' className='input_form' />
+                        <Input placeholder='colheita' className='input_form' />
 
-                    <Input placeholder='valor na colheita' className='input_form' />
-                    Nome da fazenda: {user?.data.farm_name}
-                    <Button >ENVIAR</Button>
-                </Form>
-            </Segment>
+                        <Input placeholder='valor na colheita' className='input_form' />
+                        Nome da fazenda: {user?.data.farm_name}
+                        <Button >ENVIAR</Button>
+                    </Form>
+                </Segment>
+            </Template>
         </>
-    );
+    )
 }
 
 export default PageFarm
