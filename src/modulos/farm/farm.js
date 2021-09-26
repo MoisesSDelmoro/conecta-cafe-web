@@ -1,6 +1,7 @@
 import { Segment, Label, Button, Input } from "semantic-ui-react"
 import { Template, FarmButton, FarmFields } from './styled';
 import React, { useEffect, useState } from "react";
+import { observer } from "mobx-react-lite"
 import api from "../../services/api";
 
 
@@ -33,9 +34,24 @@ function PageFarm() {
         console.log("Cliquei Aqui em Localização!!!")
     }
 
-    const handleclickContact = () => {
+    const handleclickContact = observer(() => {
         console.log("Cliquei Aqui em Contato!!!")
-    }
+        return <>
+            <FarmFields>
+
+                <Label className='sub_title_farm'>Contato</Label>
+
+
+                <Label className='title_fields'>Telefone</Label>
+
+
+                <Input placeholder='Entre com seu telefone' className='input_form' id='variedade' />
+
+                <Input placeholder='Entre com seu e-mail' className='input_form' />
+
+            </FarmFields>
+        </>
+    });
 
     return (
         <>
@@ -63,19 +79,7 @@ function PageFarm() {
                         </Button>
                     </FarmButton>
 
-                    <FarmFields>
 
-                        <Label className='sub_title_farm'>Contato</Label>
-
-
-                        <Label className='title_fields'>Telefone</Label>
-
-
-                        <Input placeholder='Entre com seu telefone' className='input_form' id='variedade' />
-
-                        <Input placeholder='Entre com seu e-mail' className='input_form' />
-
-                    </FarmFields>
                     Nome da fazenda: {user?.data.farm_name}
                     <Button >ENVIAR</Button>
 
